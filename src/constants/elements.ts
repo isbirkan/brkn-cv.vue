@@ -6,9 +6,7 @@ export enum pageIdentifier {
 export enum sidebarIdentifier {
   profilePicture = 'profile-picture',
   aboutMe = 'about-me',
-  personalInformation = 'personal-information',
-  skill = 'skills',
-  softSkills = 'soft-skills',
+  contact = 'contact',
   languages = 'languages',
   socialLinks = 'social-links'
 }

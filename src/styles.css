@@ -18,4 +18,8 @@
   .profile-triangle {
     @apply absolute z-0 border-solid border-t-150 border-t-blue-custom border-r-240 border-r-transparent;
   }
+
+  .sidebar-decoration {
+    @apply content-[''] block w-11/12 h-px bg-gray-sidebar-decoration m-0.125;
+  }
 }

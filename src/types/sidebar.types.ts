@@ -13,21 +13,13 @@ export type AboutMe = {
   data: string;
 } & BaseIdentifier;
 
-type PersonalInformationLine = {
+type ContactLine = {
   icon?: string;
   text: string;
 };
 
-export type PersonalInformation = {
-  data: PersonalInformationLine[];
-} & BaseIdentifier;
-
-export type Skills = {
-  data: string[];
-} & BaseIdentifier;
-
-export type SoftSkills = {
-  data: string[];
+export type Contact = {
+  data: ContactLine[];
 } & BaseIdentifier;
 
 type Language = {
@@ -52,9 +44,7 @@ export type Sidebar = {
   [key in sidebarIdentifier]?
     : key extends sidebarIdentifier.profilePicture ? ProfilePicture
     : key extends sidebarIdentifier.aboutMe ? AboutMe
-    : key extends sidebarIdentifier.personalInformation ? PersonalInformation
-    : key extends sidebarIdentifier.skill ? Skills
-    : key extends sidebarIdentifier.softSkills ? SoftSkills
+    : key extends sidebarIdentifier.contact ? Contact
     : key extends sidebarIdentifier.languages ? Languages
     : key extends sidebarIdentifier.socialLinks ? SocialLinks
     : null

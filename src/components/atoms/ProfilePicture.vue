@@ -11,8 +11,8 @@
 </template>
 
 <script setup lang="ts">
-import { type Asset } from '@/types/asset.types';
+import { type ProfilePicture } from '@/types/props.types';
 
-const props = defineProps<Asset>();
+const props = defineProps<ProfilePicture>();
 const imageUrl = new URL(`../../assets/${props.src}`, import.meta.url).href;
 </script>
