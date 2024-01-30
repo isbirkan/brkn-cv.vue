@@ -19,5 +19,10 @@ export type AboutMe = {
 
 export type Contact = {
   title: string;
-  contactInformation: ContactLine[];
+  contactLine: ContactLine[];
+};
+
+export type Langauges = {
+  title: string;
+  languageLine: string[];
 };

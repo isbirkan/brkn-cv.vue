@@ -22,13 +22,8 @@ export type Contact = {
   data: ContactLine[];
 } & BaseIdentifier;
 
-type Language = {
-  name: string;
-  level: number;
-};
-
 export type Languages = {
-  data: Language[];
+  data: string[];
 } & BaseIdentifier;
 
 type SocialLink = {

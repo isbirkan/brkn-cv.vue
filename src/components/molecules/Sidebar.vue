@@ -15,7 +15,12 @@
       <contact
         v-if="contactConfiguration !== null" 
         :title="contactConfiguration?.title || ''"
-        :contact-information="contactConfiguration?.data || []"
+        :contact-line="contactConfiguration?.data || []"
+      />
+      <languages
+        v-if="languageConfiguration !== null" 
+        :title="languageConfiguration?.title || ''"
+        :language-line="languageConfiguration?.data || []"
       />
     </div>
   </section>
@@ -29,10 +34,12 @@ import { sidebarIdentifier } from '@/constants/elements';
 import ProfilePicture from '@/components/atoms/ProfilePicture.vue';
 import AboutMe from '@/components/atoms/AboutMe.vue';
 import Contact from '@/components/atoms/Contact.vue';
+import Languages from '@/components/atoms/Languages.vue';
 
 defineProps<Sidebar>();
 const store = useSidebar();
 const profilePictureConfiguration = store.getElementByIdentifier(sidebarIdentifier.profilePicture);
 const aboutMeConfiguration = store.getElementByIdentifier(sidebarIdentifier.aboutMe);
 const contactConfiguration = store.getElementByIdentifier(sidebarIdentifier.contact);
+const languageConfiguration = store.getElementByIdentifier(sidebarIdentifier.languages);
 </script>

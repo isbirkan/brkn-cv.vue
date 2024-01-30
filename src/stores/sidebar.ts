@@ -51,20 +51,7 @@ export const useSidebar = defineStore('sidebar', () => {
     },
     [sidebarIdentifier.languages]: {
       title: '// languages',
-      data: [
-        {
-          name: 'romanian',
-          level: 4
-        },
-        {
-          name: 'english',
-          level: 3
-        },
-        {
-          name: 'turkish',
-          level: 2
-        }
-      ]
+      data: [ 'romanian', 'english', 'turkish']
     },
     [sidebarIdentifier.socialLinks]: {
       title: '// find me on the web',

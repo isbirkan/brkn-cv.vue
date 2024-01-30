@@ -5,7 +5,10 @@
     </h6>
     <table class="text-sm" width="100%">
       <tbody class="border-0">
-        <tr v-for="line in contactInformation" :key="line.text.replace(/\s+/g, '')">
+        <tr 
+          v-for="line in contactLine" 
+          :key="line.text.replace(/\s+/g, '')"
+        >
           <td>
             <i :class="line.icon" />
           </td>

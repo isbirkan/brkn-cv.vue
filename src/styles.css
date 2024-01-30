@@ -22,4 +22,20 @@
   .sidebar-decoration {
     @apply content-[''] block w-11/12 h-px bg-gray-sidebar-decoration m-0.125;
   }
+
+  .language-level {
+    @apply w-40 h-40 rounded-full bg-gray-sidebar-decoration;
+  }
+
+  .language-level.romanian {
+    box-shadow: inset 0px 0px 0px 2px white;
+  }
+
+  .language-level.english {
+    box-shadow: inset 0px 0px 0px 4px white;
+  }
+
+  .language-level.turkish {
+    box-shadow: inset 0px 0px 0px 6px white;
+  }
 }
