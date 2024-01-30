@@ -1,0 +1,125 @@
+{
+  // ==================================================
+  // General / Common
+  // ==================================================
+  "css.lint.unknownAtRules": "ignore",
+  "debug.allowBreakpointsEverywhere": true,
+  "editor.fontFamily": "'Fira Code', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "editor.semanticHighlighting.enabled": true,
+  "emmet.excludeLanguages": [],
+  "emmet.includeLanguages": {
+    "markdown": "html",
+    "aspnetcorerazor": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "eslint.validate": ["html", "javascript", "react", "typescript", "vue"],
+  "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false
+  },
+  "gitlens.keymap": "chorded",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "tailwindCSS.includeLanguages": {
+    "html": "HTML",
+    "javascript": "javascript",
+    "javascriptreact": "javascriptreact",
+    "plaintext": "html",
+    "vue": "html",
+    "vue-html": "html"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#03D8F3",
+    "activityBar.activeBorder": "#fcee0c",
+    //"activityBar.inactiveForeground": "#ffffff",
+    "activityBar.foreground": "#fcee0c",
+    "activityBarBadge.background": "#ab20fd",
+    "activityBarBadge.foreground": "#ffffff"
+  },
+  "workbench.colorTheme": "Bearded Theme Arc",
+  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "workbench.startupEditor": "none",
+  "workbench.settings.editor": "json",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  // ==================================================
+  // Vue.js
+  // ==================================================
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "Vue.volar",
+  "editor.formatOnSave": false, // editor is messing up with eslint by formatting again
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[vuehtml]": {
+    "editor.defaultFormatter": "Vue.volar"
+  }
+  // ==================================================
+  // ReactJS
+  // ==================================================
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": "explicit"
+  // },
+  // "editor.defaultFormatter": "octref.vetur",
+  // "editor.formatOnSave": false, // editor is messing up with eslint by formatting again
+  // "[css]": {
+  //   "editor.defaultFormatter": "octref.vetur"
+  // },
+  // "[html]": {
+  //   "editor.defaultFormatter": "octref.vetur"
+  // },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "octref.vetur"
+  // },
+  // "[json]": {
+  //   "editor.defaultFormatter": "octref.vetur"
+  // },
+  // "[jsonc]": {
+  //   "editor.defaultFormatter": "octref.vetur"
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "octref.vetur"
+  // },
+  // "[typescriptreact]": {
+  //   "editor.defaultFormatter": "octref.vetur"
+  // },
+  // "[vue]": {
+  //   "editor.defaultFormatter": "octref.vetur"
+  // },
+  // "[vuehtml]": {
+  //   "editor.defaultFormatter": "octref.vetur"
+  // }
+}

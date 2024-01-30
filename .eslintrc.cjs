@@ -1,19 +1,19 @@
 module.exports = {
     root: true,
-  
     env: {
       node: true
     },
-  
-    extends: [
+    'extends': [
       'plugin:vue/base',
       'plugin:vue/vue3-essential',
       'plugin:vue/vue3-recommended',
-      'plugin:vue/vue3-strongly-recommended'
+      'plugin:vue/vue3-strongly-recommended',
+      'eslint:recommended',
+      '@vue/typescript',
+      '@vue/eslint-config-typescript'
     ],
     parserOptions: {
-      ecmaVersion: 2020,
-      parser: '@typescript-eslint/parser'
+      ecmaVersion: 'latest'
     },
     rules: {
       'brace-style': [
@@ -38,6 +38,7 @@ module.exports = {
       'space-before-function-paren': ['error', 'never'],
       // "vue/attribute-hyphenation": ["error", "always"], // my-prop vs myProp
       'vue/attributes-order': 'error',
+      'vue/comment-directive': 0,
       'vue/html-button-has-type': 1,
       'vue/html-end-tags': 2,
       'vue/html-indent': ['error', 2],
@@ -54,19 +55,12 @@ module.exports = {
           }
         }
       ],
+      'vue/multi-word-component-names': 0,
       'vue/order-in-components': 2,
       'vue/require-default-prop': 2,
       'vue/require-prop-types': 2,
       'vuejs-accessibility/form-control-has-label': 'off',
       'vuejs-accessibility/click-events-have-key-events': 'off'
-    },
-  
-    'extends': [
-      'plugin:vue/base',
-      'plugin:vue/vue3-essential',
-      'plugin:vue/vue3-recommended',
-      'plugin:vue/vue3-strongly-recommended',
-      '@vue/typescript'
-    ]
+    }
   };
   
