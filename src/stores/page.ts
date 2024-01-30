@@ -7,7 +7,7 @@ export const usePage = defineStore('page', () => {
   const pageConfiguration = ref<Page>({
     [pageIdentifier.pageOne]: {
       isSidebarVisible: true,
-      sidebarElements: ['profile-picture', 'about-me']
+      sidebarElements: ['profile-picture', 'about-me', 'contact', 'languages', 'social-links']
     },
     [pageIdentifier.pageTwo]: {
       isSidebarVisible: true,

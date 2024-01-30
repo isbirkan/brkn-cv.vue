@@ -1,8 +1,8 @@
 <template>
   <div class="profile-triangle" />
-  <div class="flex justify-center relative mt-24 z-10">
+  <div class="flex justify-center relative mt-cst-24 z-10">
     <img
-      class="border-3 border-solid border-white rounded-full"
+      class="border-cst-3 border-solid border-white rounded-full"
       :src="imageUrl"
       :width="`${width}px`"
       :height="`${125}px`"

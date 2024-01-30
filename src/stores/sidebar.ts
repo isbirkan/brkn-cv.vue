@@ -58,19 +58,19 @@ export const useSidebar = defineStore('sidebar', () => {
       data: [
         {
           icon: 'fab fa-linkedin fa-lg mt-1 mb-1',
-          link: 'linkedin.com/in/isbirkan'
+          url: 'linkedin.com/in/isbirkan'
         },
         {
           icon: 'fab fa-facebook-square fa-lg mt-1 mb-1',
-          link: 'fb.me/isbirkan'
+          url: 'fb.me/isbirkan'
         },
         {
           icon: 'fab fa-instagram fa-lg mt-1 mb-1',
-          link: 'istagr.am/isbirkan'
+          url: 'istagr.am/isbirkan'
         },
         {
           icon: 'fab fa-github fa-lg mt-1 mb-1',
-          link: 'github.com/isbirkan'
+          url: 'github.com/isbirkan'
         }
       ]
     }

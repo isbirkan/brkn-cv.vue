@@ -11,9 +11,9 @@ module.exports = {
         }
       },
       borderWidth: {
-        3: sizes[3],
-        150: sizes[150],
-        240: sizes[240]
+        'cst-3': sizes[3],
+        'cst-150': sizes[150],
+        'cst-240': sizes[240]
       },
       colors: {
         blue: {
@@ -31,13 +31,14 @@ module.exports = {
         aller: ['Aller', 'sans-serif']
       },
       spacing: {
-        0: sizes[0],
-        0.125: sizes[0.125],
-        0.5: sizes[0.5],
-        24: sizes[24],
-        40: sizes[40],
-        150: sizes[150],
-        240: sizes[240]
+        'cst-0': sizes[0],
+        'cst-2': sizes[2],
+        'cst-8': sizes[8],
+        'cst-24': sizes[24],
+        'cst-40': sizes[40],
+        'cst-150': sizes[150],
+        'cst-240': sizes[240],
+        'cst-244': sizes[244]
       }
     }
   },

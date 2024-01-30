@@ -26,9 +26,9 @@ export type Languages = {
   data: string[];
 } & BaseIdentifier;
 
-type SocialLink = {
+export type SocialLink = {
   icon?: string;
-  link: string;
+  url: string;
 };
 
 export type SocialLinks = {

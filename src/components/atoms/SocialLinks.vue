@@ -6,20 +6,20 @@
     <table class="text-sm" width="100%">
       <tbody class="border-0">
         <tr 
-          v-for="contact in contactList" 
-          :key="contact.text.replace(/\s+/g, '')"
+          v-for="link in socialLinkList" 
+          :key="link.url.replace(/\s+/g, '')"
         >
           <td>
-            <i :class="contact.icon" />
+            <i :class="link.icon" />
           </td>
-          <td>{{ contact.text }}</td>
+          <td>{{ link.url }}</td>
         </tr>
       </tbody>
     </table>
   </div>
 </template>
-    
-  <script setup lang="ts">
-  import { type Contact } from '@/types/props.types';
-  defineProps<Contact>();
-  </script>
+      
+<script setup lang="ts">
+import { type SocialLinks } from '@/types/props.types';
+defineProps<SocialLinks>();
+</script>
