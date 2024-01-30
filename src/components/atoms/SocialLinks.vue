@@ -20,6 +20,6 @@
 </template>
       
 <script setup lang="ts">
-import { type SocialLinks } from '@/types/props.types';
+import { type SocialLinks } from '@/types/sidebar.props.types';
 defineProps<SocialLinks>();
 </script>

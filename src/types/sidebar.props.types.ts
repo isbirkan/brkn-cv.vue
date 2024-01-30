@@ -1,10 +1,6 @@
 import { type Asset } from './asset.types';
 import { type ContactLine, type SocialLink } from './sidebar.types';
 
-export type CvPage = {
-  identifier: string;
-};
-
 export type Sidebar = {
   sidebarElements?: string[];
 };
@@ -29,4 +25,4 @@ export type Langauges = {
 export type SocialLinks = {
   title: string;
   socialLinkList: SocialLink[];
-}
+};

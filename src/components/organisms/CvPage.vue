@@ -5,14 +5,14 @@
         v-if="pageConfiguration?.isSidebarVisible" 
         :sidebar-elements="pageConfiguration?.sidebarElements"
       />
-      <main-content />
+      <main-content :page-identifier="identifier" />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
 import { usePage } from '@/stores/page';
-import { type CvPage } from '@/types/props.types';
+import { type CvPage } from '@/types/page.props.types';
 import { pageIdentifier } from '@/constants/elements';
 
 import Sidebar from '@/components/molecules/Sidebar.vue';

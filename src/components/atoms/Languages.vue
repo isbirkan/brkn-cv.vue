@@ -19,6 +19,6 @@
 </template>
     
   <script setup lang="ts">
-  import { type Langauges } from '@/types/props.types';
+  import { type Langauges } from '@/types/sidebar.props.types';
   defineProps<Langauges>();
   </script>

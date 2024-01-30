@@ -12,6 +12,6 @@
 </template>
   
 <script setup lang="ts">
-import { type AboutMe } from '@/types/props.types';
+import { type AboutMe } from '@/types/sidebar.props.types';
 defineProps<AboutMe>();
 </script>

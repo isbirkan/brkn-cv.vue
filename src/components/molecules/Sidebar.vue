@@ -1,5 +1,5 @@
 <template>
-  <section class="flex-shrink-0 flex-col w-cst-240 h-full bg-gray-custom-dark text-white-left font-aller leading-4">
+  <section class="flex-shrink-0 flex-col w-cst-240 h-full bg-gray-custom-medium text-white-left font-aller leading-4">
     <profile-picture
       v-if="profilePictureConfiguration !== null"
       :src="profilePictureConfiguration?.data.src || ''"
@@ -36,7 +36,7 @@
   
 <script setup lang="ts">
 import { useSidebar } from '@/stores/sidebar';
-import { type Sidebar } from '@/types/props.types';
+import { type Sidebar } from '@/types/sidebar.props.types';
 import { sidebarIdentifier } from '@/constants/elements';
 
 import ProfilePicture from '@/components/atoms/ProfilePicture.vue';

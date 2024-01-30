@@ -11,6 +11,9 @@
   html {
     font-family: 'Roboto', system-ui, sans-serif;
     font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: theme('colors.gray.custom-dark');
   }
 }
 
@@ -20,11 +23,11 @@
   }
 
   .sidebar-decoration {
-    @apply content-[''] block w-11/12 h-px bg-gray-sidebar-decoration m-cst-2;
+    @apply content-[''] block w-11/12 h-px bg-gray-custom-light m-cst-2;
   }
 
   .language-level {
-    @apply w-cst-40 h-cst-40 rounded-full bg-gray-sidebar-decoration;
+    @apply w-cst-40 h-cst-40 rounded-full bg-gray-custom-light;
   }
 
   .language-level.romanian {

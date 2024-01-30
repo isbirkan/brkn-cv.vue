@@ -20,6 +20,6 @@
 </template>
     
   <script setup lang="ts">
-  import { type Contact } from '@/types/props.types';
+  import { type Contact } from '@/types/sidebar.props.types';
   defineProps<Contact>();
   </script>

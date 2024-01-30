@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { type ProfilePicture } from '@/types/props.types';
+import { type ProfilePicture } from '@/types/sidebar.props.types';
 
 const props = defineProps<ProfilePicture>();
 const imageUrl = new URL(`../../assets/${props.src}`, import.meta.url).href;
