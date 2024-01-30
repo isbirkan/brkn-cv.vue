@@ -12,6 +12,11 @@
         :title="aboutMeConfiguration?.title || ''"
         :description="aboutMeConfiguration?.data || ''"
       />
+      <contact
+        v-if="contactConfiguration !== null" 
+        :title="contactConfiguration?.title || ''"
+        :contact-information="contactConfiguration?.data || []"
+      />
     </div>
   </section>
 </template>
@@ -23,9 +28,11 @@ import { sidebarIdentifier } from '@/constants/elements';
 
 import ProfilePicture from '@/components/atoms/ProfilePicture.vue';
 import AboutMe from '@/components/atoms/AboutMe.vue';
+import Contact from '@/components/atoms/Contact.vue';
 
 defineProps<Sidebar>();
 const store = useSidebar();
 const profilePictureConfiguration = store.getElementByIdentifier(sidebarIdentifier.profilePicture);
 const aboutMeConfiguration = store.getElementByIdentifier(sidebarIdentifier.aboutMe);
+const contactConfiguration = store.getElementByIdentifier(sidebarIdentifier.contact);
 </script>

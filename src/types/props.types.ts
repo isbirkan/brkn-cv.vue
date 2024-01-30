@@ -1,4 +1,5 @@
 import { type Asset } from './asset.types';
+import { type ContactLine } from './sidebar.types';
 
 export type CvPage = {
   identifier: string;
@@ -14,4 +15,9 @@ export type ProfilePicture = Asset;
 export type AboutMe = {
   title: string;
   description: string;
+};
+
+export type Contact = {
+  title: string;
+  contactInformation: ContactLine[];
 };

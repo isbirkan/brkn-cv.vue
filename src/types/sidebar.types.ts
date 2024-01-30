@@ -13,7 +13,7 @@ export type AboutMe = {
   data: string;
 } & BaseIdentifier;
 
-type ContactLine = {
+export type ContactLine = {
   icon?: string;
   text: string;
 };
