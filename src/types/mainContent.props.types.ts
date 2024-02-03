@@ -2,6 +2,7 @@ import { WorkplaceIdentifier, EducationIdentifier } from '@/constants/identifier
 
 export type MainContent = {
   pageIdentifier: string;
+  isSignatureVisible?: boolean | true;
   isWorkPlaceVisible?: boolean | false;
   isEducationVisible?: boolean | false;
   workPlaces?: string[];

@@ -5,7 +5,7 @@
       v-if="isWorkPlaceVisible"
       :work-places="workPlaces || []"
     />
-    <div class="absolute bottom-1 left-cst-244 font-aller text-xs">
+    <div v-if="isSignatureVisible" class="absolute bottom-1 left-cst-244 font-aller text-xs">
       @BRKN.Digital
     </div>
   </section>

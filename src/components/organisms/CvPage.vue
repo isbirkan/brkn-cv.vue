@@ -6,7 +6,8 @@
         :sidebar-elements="pageConfiguration?.sidebarElements"
       />
       <main-content 
-        :page-identifier="identifier" 
+        :page-identifier="identifier"
+        :is-signature-visible="pageConfiguration?.isSidebarVisible"
         :is-work-place-visible="pageConfiguration?.isWorkPlaceVisible"
         :is-education-visible="pageConfiguration?.isEducationVisible"
         :work-places="pageConfiguration?.workPlaces"

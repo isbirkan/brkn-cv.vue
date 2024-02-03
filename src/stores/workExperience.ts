@@ -71,7 +71,16 @@ export const useWorkExperience = defineStore('workExperience', () => {
         position: 'Software Developer',
         period: 'March 2022 - February 2024',
         location: 'Bucharest, RO',
-        hireType: 'Contract'
+        hireType: 'Contract',
+        intermediary: {
+          name: 'Extia France',
+          logo: {
+            src: 'extia-france.jpeg',
+            width: '35',
+            marginLeft: '-1',
+            marginRight: '10'
+          }
+        }
       },
       descriptionSection: {
         description: [
@@ -88,7 +97,7 @@ export const useWorkExperience = defineStore('workExperience', () => {
           <p class="mt-2 mb-1">✒️ Responsibilities:</p>
           <ul class="pl-5 list-disc list-inside">
             <li>
-              Infrastructure analysis, improvement and documentation
+              Infrastructure analysis, improvements and documentation
             </li>
             <li>
               Both .NET Core backend and ReactJS frontend
@@ -101,17 +110,12 @@ export const useWorkExperience = defineStore('workExperience', () => {
               product applications(s)
             </li>
             <li>
-              Constantly verifying, improving, deploying and testing
-              both the Web and Native Mobile capabilities of the
-              product applications(s)
-            </li>
-            <li>
-              Legacy code migration for different backend systems,
+              Legacy code migration for various backend systems,
               such as Authentication server and Microsoft Dynamics
               Query services
             </li>
             <li>
-              Improving, updating and migrating various parts of the
+              Improving, updating and migrating different parts of the
               frontend product applications towards modern concepts,
               such as hooks, typescript support, RTK Query,
               translations and new styling libraries
@@ -120,27 +124,27 @@ export const useWorkExperience = defineStore('workExperience', () => {
           <p class="mt-2 mb-1">✔️ Achievements:</p>
           <ul class="pl-5 list-disc list-inside">
             <li>
-              Improved knowledge about enterprise level Azure
+              Improved my knowledge about enterprise level Azure
               Pipelines and different components that come in-play
             </li>
             <li>
               Continued to gather experience on various backend
               related concepts, patterns and technologies such as CQRS
               with Mediator, different Caching Mechanisms,
-              Authentication solutions and E2E WebAPI testing
+              Authentication solutions and E2E Web API testing
             </li>
             <li>
               Continued to gather experience with ReactJS and various
-              new related-concepts
+              related-concepts
             </li>
             <li>
-              Gained knowledge on the React/Ionic/Capacitor native
-              mobile development and release ecosystem
+              Gained knowledge on the React/Ionic/Capacitor ecosystem of native
+              mobile development and release
             </li>
             <li>
-              Better knowledge about Microsoft Dynamics 365 and how to
+              Better understanding about Microsoft Dynamics 365 and how to
               efficiently communicate directly and through service
-              layers, using OData and XML querying
+              layers by making use of OData and XML querying
             </li>
             <li>
               Improved analysis, architecture and documentation
@@ -187,35 +191,35 @@ export const useWorkExperience = defineStore('workExperience', () => {
       descriptionSection: {
         description: [
           `
-          <p class="mt-2 mb-1">
-            Involved in different kind of client projects, both small
+          <p class="mt-1">
+            &emsp; Involved in different kind of client projects, both small
             and large scale alike:
           </p>
-          <ul class="mb-1">
+          <ul class="pl-5 list-disc list-inside">
             <li>
               Finance system with a business model revolving around
               different kinds of loaning mechanisms
             </li>
             <li>
               Government oriented systems and platforms, which have
-              aided in processes such as national/internation
+              aided in processes such as national/international
               export/import flows and a country-wide number plate
-              generation system
+              generation flow
             </li>
             <li>
-              Different kind of smaller projects for e-commerce and
-              Business-to-Client providers
+              Different kinds of smaller projects for e-commerce and
+              Business-to-client providers
             </li>
           </ul>
-          <p class="mt-0 mb-1">✒️ Responsibilities:</p>
-          <ul class="mb-1">
+          <p class="mt-2 mb-1">✒️ Responsibilities:</p>
+          <ul class="pl-5 list-disc list-inside">
             <li>
               Develop/extend a finance website using ASP.NET MVC with
               jQuery and Kendo UI
             </li>
             <li>
               Develop/extend government administration websites using
-              ASP.NET Core with Vue.js (v2 initially & later on, v3)
+              ASP.NET Core with Vue.js (initially v2, followed by v3)
             </li>
             <li>
               Develop/extend an image generation web application using
@@ -223,7 +227,7 @@ export const useWorkExperience = defineStore('workExperience', () => {
             </li>
             <li>
               Develop/extend websites using ReactJS and additional
-              libraries and packages
+              related libraries and packages
             </li>
             <li>
               Create and improve UI/UX design using HTML5 and CSS
@@ -231,7 +235,7 @@ export const useWorkExperience = defineStore('workExperience', () => {
             </li>
             <li>Develop/extend backend services and APIs</li>
             <li>
-              Participation in the process of design, planning and
+              Participation in the processes of design, planning and
               implementation of a multi-tenant website
             </li>
             <li>
@@ -239,8 +243,8 @@ export const useWorkExperience = defineStore('workExperience', () => {
               C#.
             </li>
           </ul>
-          <p class="mt-3 mb-1">✔️ Achievements:</p>
-          <ul class="mb-1">
+          <p class="mt-2 mb-1">✔️ Achievements:</p>
+          <ul class="pl-5 list-disc list-inside">
             <li>Learned about Azure Pipelines, Releases, CI/CD</li>
             <li>Better knowledge about the finance business model</li>
             <li>
@@ -297,16 +301,16 @@ export const useWorkExperience = defineStore('workExperience', () => {
       descriptionSection: {
         description: [
           `
-          <p class="mt-1 mb-1">
-            Improving and developing new features for a large scale
+          <p class="mt-1">
+            &emsp; Improving and developing new features for a large scale
             Lottery & Gambling software model, with a large underlying
             infrastructure of services that provide game mechanisms &
             algorithms, payment gateways, different kind of stationary
             and portable device integrations, promotions and many
             others.
           </p>
-          <p class="mt-1 mb-1">✒️ Responsibilities:</p>
-          <ul class="mb-0">
+          <p class="mt-2 mb-1">✒️ Responsibilities:</p>
+          <ul class="pl-5 list-disc list-inside">
             <li>
               Develop and maintain components for a gateway
               application involving communication with Web and WCF
@@ -321,8 +325,8 @@ export const useWorkExperience = defineStore('workExperience', () => {
               and lottery business
             </li>
           </ul>
-          <p class="mt-0 mb-1">✔️ Achievements:</p>
-          <ul class="mb-1">
+          <p class="mt-2 mb-1">✔️ Achievements:</p>
+          <ul class="pl-5 list-disc list-inside">
             <li>
               Understanding of the gambling and lottery business model
             </li>
@@ -360,17 +364,17 @@ export const useWorkExperience = defineStore('workExperience', () => {
       descriptionSection: {
         description: [
           `
-          <p class="mt-1 mb-1">
-            Solution for an automobile retail platform – Web and
-            Mobile applications, which enable users to evaluate their
-            own asset by configuring various options while the Website
+          <p class="mt-1">
+            &emsp; Solution for an automobile retail platform (Web and
+            Mobile applications), which enable users to evaluate their
+            own asset by configuring various options, during which the Website
             and Services return suggestions, such as pricing. In the
-            next steps, the user can decide to sell, and other clients
+            next steps, the user can decide to sell and other clients
             can make use of complex biding mechanisms, which are prone
-            to event, promotions, etc.
+            to events, promotions, etc.
           </p>
-          <p class="mt-1 mb-1">✒️ Responsibilities:</p>
-          <ul class="mb-1">
+          <p class="mt-2 mb-1">✒️ Responsibilities:</p>
+          <ul class="pl-5 list-disc list-inside">
             <li>
               Develop/extend/maintain websites built with the help of
               ASP.NET MVC, ASP.NET Core, C# and JavaScript
@@ -393,8 +397,8 @@ export const useWorkExperience = defineStore('workExperience', () => {
             </li>
             <li>Problem investigation, solving and code analysis</li>
           </ul>
-          <p class="mb-1">✔️ Achievements:</p>
-          <ul class="mb-1">
+          <p class="mt-2 mb-1">✔️ Achievements:</p>
+          <ul class="pl-5 list-disc list-inside">
             <li>
               Good understanding of a complex software structure,
               hierarchy and inner-communication
@@ -446,39 +450,39 @@ export const useWorkExperience = defineStore('workExperience', () => {
       descriptionSection: {
         description: [
           `
-          <p class="mt-2 mb-1">
-            Providing software and hardware solutions for the Food
+          <p class="mt-1">
+            &emsp; Providing software and hardware solutions for the Food
             retail industry, such as Back and Front Office
             applications, POS software and integrations, mechanical &
             electric scales configuration, automatic RFID scanners and
             many others.
           </p>
-          <p class="mt-1 mb-1">✒️ Responsibilities:</p>
-          <ul class="mb-1">
+          <p class="mt-2 mb-1">✒️ Responsibilities:</p>
+          <ul class="pl-5 list-disc list-inside">
             <li>
               Develop and maintain new modules for a Windows Forms
-              Desktop Application.
+              Desktop Application
             </li>
             <li>
               Create complex stored procedures to retrieve data for
-              Crystal Reports.
+              Crystal Reports
             </li>
             <li>
               Setup and configure retail handheld devices, POS devices
-              and electrical scales.
+              and electrical scales
             </li>
           </ul>
-          <p class="mt-0 mb-1">✔️ Achievements:</p>
-          <ul class="mb-1">
+          <p class="mt-2 mb-1">✔️ Achievements:</p>
+          <ul class="pl-5 list-disc list-inside">
             <li>
               Started to understand the business side of software
-              applications.
+              applications
             </li>
-            <li>Developed PL/SQL skills and database logic.</li>
-            <li>Enhanced my previous C# programming skills.</li>
+            <li>Developed PL/SQL skills and database logic</li>
+            <li>Enhanced my previous C# programming skills</li>
             <li>
               Learned to work with production-ready software and
-              devices.
+              devices
             </li>
           </ul>`
         ]

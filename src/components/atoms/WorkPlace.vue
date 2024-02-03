@@ -15,7 +15,7 @@
         }"
       >
       <div v-if="workPlaceDetails" class="flex flex-col self-center w-full leading-cst-14">
-        <span class="">
+        <span>
           <label class="font-bold">{{ workPlaceDetails?.position }}</label>
           {{ ' ' }}
           <label class="font-bold text-blue-custom">@{{ workPlaceDetails?.name }}</label>
@@ -25,6 +25,23 @@
           <label class="text-xs float-end">{{ `${workPlaceDetails?.location} / ${workPlaceDetails?.hireType}` }}</label>
         </span>
       </div>
+    </div>
+    <div v-if="workPlaceDetails?.intermediary" class="flex flex-row mb-1 text-sm">
+      <img
+        v-if="workPlaceDetails?.intermediary"
+        :src="workPlaceIntermediaryImageUrl"
+        :style="{
+          width: `${workPlaceDetails?.intermediary?.logo.width}px`,
+          height: `${workPlaceDetails?.intermediary?.logo.height}px`,
+          marginLeft: `${workPlaceDetails?.intermediary?.logo.marginLeft}px`,
+          marginRight: `${workPlaceDetails?.intermediary?.logo.marginRight}px`
+        }"
+      >
+      <span class="self-center">
+        <label class="italic">through</label>
+        {{ ' ' }}
+        <label class="font-bold text-blue-custom">@{{ workPlaceDetails?.intermediary?.name }}</label>
+      </span>
     </div>
     <div
       v-if="workPlaceDescription"
@@ -54,19 +71,10 @@ const store = useWorkExperience();
 const workPlaceConfiguration = store.getWorkplaceByIdentifier(props.identifier);
 const workPlaceImageUrl = new URL(`../../assets/${workPlaceConfiguration?.workPlaceSection?.logo.src}`, import.meta.url).href;
 const workPlaceDetails = workPlaceConfiguration?.workPlaceSection;
-// const workPlaceDescription = computed(() => {
-//   if (workPlaceConfiguration?.descriptionSection) {
-//     if (workPlaceConfiguration?.descriptionSection.description.length > 1
-//       && workPlaceConfiguration?.descriptionSection.overflow
-//       && props.isFirst) {
-//       return workPlaceConfiguration?.descriptionSection.description[1];
-//     }
-
-//     return workPlaceConfiguration?.descriptionSection.description[0];
-//   }
-
-//   return null;
-// });
+const workPlaceIntermediaryImageUrl = computed(() => {
+  return workPlaceDetails?.intermediary?.logo ? new URL(`../../assets/${workPlaceDetails?.intermediary?.logo.src}`, import.meta.url).href
+                         : '';
+});
 const workPlaceDescription = computed(() => {
   const descriptionSection = workPlaceConfiguration?.descriptionSection;
   if (descriptionSection) {
@@ -78,14 +86,6 @@ const workPlaceDescription = computed(() => {
   }
   return null;
 });
-// const workPlaceTags = computed(() => {
-//   if ((workPlaceConfiguration?.tagSection && !workPlaceConfiguration?.tagSection?.overflow)
-//    || (workPlaceConfiguration?.tagSection && workPlaceConfiguration?.tagSection?.overflow && props.isFirst)) {
-//     return workPlaceConfiguration?.tagSection.tags;
-//   }
-
-//   return null;
-// });
 const workPlaceTags = computed(() => {
   const tagSection = workPlaceConfiguration?.tagSection;
   if (tagSection && (!tagSection.overflow || (tagSection.overflow && props.isFirst))) {

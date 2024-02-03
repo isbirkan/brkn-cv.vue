@@ -32,17 +32,13 @@ export const usePage = defineStore('page', () => {
       isWorkPlaceVisible: true,
       isEducationVisible: false,
       sidebarElements: [SidebarIdentifier.recommndation],
-      workPlaces: [
-        WorkplaceIdentifier.arniaSoftwarePrime,
-        WorkplaceIdentifier.editec,
-        WorkplaceIdentifier.eminusSoftware
-      ]
+      workPlaces: [WorkplaceIdentifier.arniaSoftwarePrime, WorkplaceIdentifier.editec]
     },
     [PageIdentifier.pageThree]: {
-      isSidebarVisible: true,
-      isWorkPlaceVisible: false,
+      isSidebarVisible: false,
+      isWorkPlaceVisible: true,
       isEducationVisible: true,
-      workPlaces: [WorkplaceIdentifier.romanianBusinessConsult],
+      workPlaces: [WorkplaceIdentifier.eminusSoftware, WorkplaceIdentifier.romanianBusinessConsult],
       educationItems: [
         EducationIdentifier.upbMaster,
         EducationIdentifier.upbEngineer,
