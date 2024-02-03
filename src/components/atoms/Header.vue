@@ -6,7 +6,7 @@
       <label class="text-2xl text-blue-custom leading-cst-22">with love for the frontend</label>
     </div>
   </div>
-  <hr class="h-px my-4 bg-gray-custom-dark opacity-25">
+  <hr class="h-px my-4 bg-gray-custom-dark border-gray-custom-dark opacity-25">
 </template>
     
 <script setup lang="ts">

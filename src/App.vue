@@ -1,13 +1,16 @@
 <template>
   <cv-page
-    :identifier="pageIdentifier.pageOne"
+    :identifier="PageIdentifier.pageOne"
   />
   <cv-page
-    :identifier="pageIdentifier.pageTwo"
+    :identifier="PageIdentifier.pageTwo"
+  />
+  <cv-page
+    :identifier="PageIdentifier.pageThree"
   />
 </template>
 
 <script setup lang="ts">
-import { pageIdentifier } from '@/constants/elements';
+import { PageIdentifier } from '@/constants/identifiers';
 import CvPage from '@/components/organisms/CvPage.vue';
 </script>

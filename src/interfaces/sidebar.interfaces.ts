@@ -1,6 +1,6 @@
-import { sidebarIdentifier } from '@/constants/elements';
+import { SidebarIdentifier } from '@/constants/identifiers';
 import { type Sidebar } from '@/types/sidebar.types';
 
 export interface IGetElementByIdentifier {
-  <Key extends sidebarIdentifier>(identifier: Key): Sidebar[Key] | null;
+  <Key extends SidebarIdentifier>(identifier: Key): Sidebar[Key] | null;
 }

@@ -13,7 +13,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    color: theme('colors.gray.custom-dark');
+    color: theme('colors.gray-custom-dark');
   }
 }
 
@@ -24,6 +24,10 @@
 
   .sidebar-decoration {
     @apply content-[''] block w-11/12 h-px bg-gray-custom-light m-cst-2;
+  }
+
+  .sidebar-title-font {
+    @apply mb-cst-8 font-medium uppercase leading-5
   }
 
   .language-level {
@@ -40,5 +44,21 @@
 
   .language-level.turkish {
     box-shadow: inset 0px 0px 0px 6px white;
+  }
+
+  .main-icon-wrapper {
+    @apply w-cst-45 h-cst-45 p-2 border-solid border-2 border-white rounded-full bg-blue-custom leading-6
+  }
+
+  .timeline-decoration {
+    @apply border-solid border-l-2 border-gray-custom-medium-opaque
+  }
+
+  .pill-normal {
+    @apply inline-block mt-0.5 mr-1 px-1 py-0.5 font-aller font-bold leading-4 text-xs whitespace-nowrap text-gray-custom-medium border border-solid border-blue-custom bg-transparent rounded-full
+  }
+
+  .pill-highlited {
+    @apply inline-block mt-0.5 mr-1 px-1 py-0.5 font-aller font-bold leading-4 text-xs whitespace-nowrap text-purple-custom-text border-cst-3 border-solid border-purple-custom-border/20 bg-purple-custom-text/10 rounded-full
   }
 }

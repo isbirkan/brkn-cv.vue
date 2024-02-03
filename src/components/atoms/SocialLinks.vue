@@ -1,6 +1,6 @@
 <template>
   <div class="mt-12">
-    <h6 class="mb-cst-8 font-medium uppercase leading-5 before:sidebar-decoration after:sidebar-decoration">
+    <h6 class="sidebar-title-font before:sidebar-decoration after:sidebar-decoration">
       {{ title }}
     </h6>
     <table class="text-sm" width="100%">

@@ -1,21 +1,57 @@
 import { ref, computed } from 'vue';
 import { defineStore } from 'pinia';
 import { type Page } from '@/types/page.types';
-import { pageIdentifier } from '@/constants/elements';
+import {
+  PageIdentifier,
+  SidebarIdentifier,
+  WorkplaceIdentifier,
+  EducationIdentifier
+} from '@/constants/identifiers';
 
 export const usePage = defineStore('page', () => {
   const pageConfiguration = ref<Page>({
-    [pageIdentifier.pageOne]: {
+    [PageIdentifier.pageOne]: {
       isSidebarVisible: true,
-      sidebarElements: ['profile-picture', 'about-me', 'contact', 'languages', 'social-links']
+      isWorkPlaceVisible: true,
+      isEducationVisible: false,
+      sidebarElements: [
+        SidebarIdentifier.profilePicture,
+        SidebarIdentifier.aboutMe,
+        SidebarIdentifier.contact,
+        SidebarIdentifier.languages,
+        SidebarIdentifier.socialLinks
+      ],
+      workPlaces: [
+        WorkplaceIdentifier.brknDigital,
+        WorkplaceIdentifier.arniaSoftwareSecond,
+        WorkplaceIdentifier.sodexoFrance
+      ]
     },
-    [pageIdentifier.pageTwo]: {
+    [PageIdentifier.pageTwo]: {
       isSidebarVisible: true,
-      sidebarElements: []
+      isWorkPlaceVisible: true,
+      isEducationVisible: false,
+      sidebarElements: [SidebarIdentifier.recommndation],
+      workPlaces: [
+        WorkplaceIdentifier.arniaSoftwarePrime,
+        WorkplaceIdentifier.editec,
+        WorkplaceIdentifier.eminusSoftware
+      ]
+    },
+    [PageIdentifier.pageThree]: {
+      isSidebarVisible: true,
+      isWorkPlaceVisible: false,
+      isEducationVisible: true,
+      workPlaces: [WorkplaceIdentifier.romanianBusinessConsult],
+      educationItems: [
+        EducationIdentifier.upbMaster,
+        EducationIdentifier.upbEngineer,
+        EducationIdentifier.ichc
+      ]
     }
   });
 
-  const getPageByIdentifier = (key: pageIdentifier): Page[keyof Page] | null =>
+  const getPageByIdentifier = (key: PageIdentifier): Page[keyof Page] | null =>
     computed(() => pageConfiguration.value[key]).value || null;
 
   return { pageConfiguration, getPageByIdentifier };

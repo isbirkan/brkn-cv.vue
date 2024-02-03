@@ -1,5 +1,5 @@
 import type { Asset } from './asset.types';
-import { sidebarIdentifier } from '@/constants/elements';
+import { SidebarIdentifier } from '@/constants/identifiers';
 
 type BaseIdentifier = {
   title?: string;
@@ -36,11 +36,11 @@ export type SocialLinks = {
 } & BaseIdentifier;
 
 export type Sidebar = {
-  [key in sidebarIdentifier]?
-    : key extends sidebarIdentifier.profilePicture ? ProfilePicture
-    : key extends sidebarIdentifier.aboutMe ? AboutMe
-    : key extends sidebarIdentifier.contact ? Contact
-    : key extends sidebarIdentifier.languages ? Languages
-    : key extends sidebarIdentifier.socialLinks ? SocialLinks
+  [key in SidebarIdentifier]?
+    : key extends SidebarIdentifier.profilePicture ? ProfilePicture
+    : key extends SidebarIdentifier.aboutMe ? AboutMe
+    : key extends SidebarIdentifier.contact ? Contact
+    : key extends SidebarIdentifier.languages ? Languages
+    : key extends SidebarIdentifier.socialLinks ? SocialLinks
     : null
   };

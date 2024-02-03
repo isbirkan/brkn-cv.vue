@@ -37,7 +37,7 @@
 <script setup lang="ts">
 import { useSidebar } from '@/stores/sidebar';
 import { type Sidebar } from '@/types/sidebar.props.types';
-import { sidebarIdentifier } from '@/constants/elements';
+import { SidebarIdentifier } from '@/constants/identifiers';
 
 import ProfilePicture from '@/components/atoms/ProfilePicture.vue';
 import AboutMe from '@/components/atoms/AboutMe.vue';
@@ -49,23 +49,23 @@ const props = defineProps<Sidebar>();
 const store = useSidebar();
 
 const profilePictureConfiguration =
-  props.sidebarElements?.includes(sidebarIdentifier.profilePicture)
-    ? store.getElementByIdentifier(sidebarIdentifier.profilePicture)
+  props.sidebarElements?.includes(SidebarIdentifier.profilePicture)
+    ? store.getElementByIdentifier(SidebarIdentifier.profilePicture)
     : null;
 const aboutMeConfiguration =
-  props.sidebarElements?.includes(sidebarIdentifier.aboutMe)
-    ? store.getElementByIdentifier(sidebarIdentifier.aboutMe)
+  props.sidebarElements?.includes(SidebarIdentifier.aboutMe)
+    ? store.getElementByIdentifier(SidebarIdentifier.aboutMe)
     : null;
 const contactConfiguration =
-  props.sidebarElements?.includes(sidebarIdentifier.contact)
-    ? store.getElementByIdentifier(sidebarIdentifier.contact)
+  props.sidebarElements?.includes(SidebarIdentifier.contact)
+    ? store.getElementByIdentifier(SidebarIdentifier.contact)
     : null;
 const languagesConfiguration =
-  props.sidebarElements?.includes(sidebarIdentifier.languages)
-    ? store.getElementByIdentifier(sidebarIdentifier.languages)
+  props.sidebarElements?.includes(SidebarIdentifier.languages)
+    ? store.getElementByIdentifier(SidebarIdentifier.languages)
     : null;
 const socialLinksConfiguration =
-  props.sidebarElements?.includes(sidebarIdentifier.socialLinks)
-    ? store.getElementByIdentifier(sidebarIdentifier.socialLinks)
+  props.sidebarElements?.includes(SidebarIdentifier.socialLinks)
+    ? store.getElementByIdentifier(SidebarIdentifier.socialLinks)
     : null;
 </script>
