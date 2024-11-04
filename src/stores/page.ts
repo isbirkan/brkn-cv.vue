@@ -5,7 +5,8 @@ import {
   PageIdentifier,
   SidebarIdentifier,
   WorkplaceIdentifier,
-  EducationIdentifier
+  EducationIdentifier,
+  RecommendationIdentifier
 } from '@/constants/identifiers';
 
 export const usePage = defineStore('page', () => {
@@ -31,13 +32,21 @@ export const usePage = defineStore('page', () => {
       isSidebarVisible: true,
       isWorkPlaceVisible: true,
       isEducationVisible: false,
-      sidebarElements: [SidebarIdentifier.recommndation],
+      sidebarElements: [SidebarIdentifier.recommendation],
+      sidebarRecommendationItems: [
+        RecommendationIdentifier.recommendationAntoine,
+        RecommendationIdentifier.recommendationSylvain
+      ],
       workPlaces: [WorkplaceIdentifier.arniaSoftwarePrime, WorkplaceIdentifier.editec]
     },
     [PageIdentifier.pageThree]: {
-      isSidebarVisible: false,
+      isSidebarVisible: true,
       isWorkPlaceVisible: true,
       isEducationVisible: true,
+      sidebarElements: [SidebarIdentifier.recommendation],
+      sidebarRecommendationItems: [
+        RecommendationIdentifier.recommendationMarius
+      ],
       workPlaces: [WorkplaceIdentifier.eminusSoftware, WorkplaceIdentifier.romanianBusinessConsult],
       educationItems: [
         EducationIdentifier.upbMaster,

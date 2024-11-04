@@ -27,14 +27,20 @@
         :title="socialLinksConfiguration?.title || ''"
         :social-link-list="socialLinksConfiguration?.data || []"
       />
+      <recommendations
+        v-if="recommendationConfiguration !== null"
+        :title="recommendationConfiguration?.title || ''"
+        :recommendation-list="recommendationConfiguration?.data || []"
+      />
     </div>
     <div class="absolute bottom-1 left-36 text-xs">
       #designedbyme
     </div>
   </section>
 </template>
-  
+
 <script setup lang="ts">
+import { computed } from 'vue';
 import { useSidebar } from '@/stores/sidebar';
 import { type Sidebar } from '@/types/sidebar.props.types';
 import { SidebarIdentifier } from '@/constants/identifiers';
@@ -44,6 +50,7 @@ import AboutMe from '@/components/atoms/AboutMe.vue';
 import Contact from '@/components/atoms/Contact.vue';
 import Languages from '@/components/atoms/Languages.vue';
 import SocialLinks from '@/components/atoms/SocialLinks.vue';
+import Recommendations from '../atoms/Recommendations.vue';
 
 const props = defineProps<Sidebar>();
 const store = useSidebar();
@@ -68,4 +75,23 @@ const socialLinksConfiguration =
   props.sidebarElements?.includes(SidebarIdentifier.socialLinks)
     ? store.getElementByIdentifier(SidebarIdentifier.socialLinks)
     : null;
+const recommendationConfiguration = computed(() => {
+  if (props.sidebarElements?.includes(SidebarIdentifier.recommendation)) {
+    const recommendations = store.getElementByIdentifier(SidebarIdentifier.recommendation);
+    if (recommendations && recommendations.data && props.sidebarRecommendationItems) {
+      const filteredRecommendations = {
+        ...recommendations,
+        data: recommendations.data.filter((recommendation) =>
+          props.sidebarRecommendationItems?.includes(recommendation.identifier)
+        )
+      };
+
+      return filteredRecommendations;
+    }
+
+    return recommendations;
+  }
+
+  return null;
+});
 </script>

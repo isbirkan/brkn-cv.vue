@@ -10,7 +10,13 @@ export enum SidebarIdentifier {
   contact = 'contact',
   languages = 'languages',
   socialLinks = 'social-links',
-  recommndation = 'recommndation'
+  recommendation = 'recommendation'
+}
+
+export enum RecommendationIdentifier { 
+  recommendationAntoine = 'recommendation-antoine',
+  recommendationSylvain = 'recommendation-sylvain',
+  recommendationMarius = 'recommendation-marius'
 }
 
 export enum WorkplaceIdentifier {

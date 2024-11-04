@@ -4,6 +4,7 @@
       <sidebar 
         v-if="pageConfiguration?.isSidebarVisible" 
         :sidebar-elements="pageConfiguration?.sidebarElements"
+        :sidebar-recommendation-items="pageConfiguration?.sidebarRecommendationItems"
       />
       <main-content 
         :page-identifier="identifier"

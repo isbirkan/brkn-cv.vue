@@ -1,4 +1,5 @@
 import type { Asset } from './asset.types';
+import type { Recommendation } from './recommendation.props.types';
 import { SidebarIdentifier } from '@/constants/identifiers';
 
 type BaseIdentifier = {
@@ -35,6 +36,10 @@ export type SocialLinks = {
   data: SocialLink[];
 } & BaseIdentifier;
 
+export type Recommendations = {
+  data: Recommendation[];
+} & BaseIdentifier;
+
 export type Sidebar = {
   [key in SidebarIdentifier]?
     : key extends SidebarIdentifier.profilePicture ? ProfilePicture
@@ -42,5 +47,6 @@ export type Sidebar = {
     : key extends SidebarIdentifier.contact ? Contact
     : key extends SidebarIdentifier.languages ? Languages
     : key extends SidebarIdentifier.socialLinks ? SocialLinks
+    : key extends SidebarIdentifier.recommendation ? Recommendations
     : null
   };

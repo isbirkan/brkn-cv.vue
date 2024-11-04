@@ -6,6 +6,7 @@ export type Page = {
     isWorkPlaceVisible: boolean;
     isEducationVisible: boolean;
     sidebarElements?: string[];
+    sidebarRecommendationItems?: string[];
     workPlaces?: string[];
     educationItems?: string[]
   };
