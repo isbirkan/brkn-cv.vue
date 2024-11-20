@@ -5,7 +5,7 @@ export type MainContent = {
   isSignatureVisible?: boolean | true;
   isWorkPlaceVisible?: boolean | false;
   isEducationVisible?: boolean | false;
-  workPlaces?: string[];
+  workPlaceItems?: string[];
   educationItems?: string[]
 };
 

@@ -8,6 +8,9 @@
   <cv-page
     :identifier="PageIdentifier.pageThree"
   />
+  <cv-page
+    :identifier="PageIdentifier.pageFour"
+  />
 </template>
 
 <script setup lang="ts">

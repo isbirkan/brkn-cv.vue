@@ -12,11 +12,11 @@ export type Intermediary = {
 
 export type WorkPlaceHeader = {
   name: string;
-  logo: Asset;
   position: string;
   period: string;
   location: string;
   hireType: string;
+  logo: Asset;
   intermediary?: Intermediary;
 }
 
@@ -31,4 +31,21 @@ export type WorkPlace = {
     tags: Tag[],
     overflow?: boolean | false;
   };
+};
+
+export type EducationHeader = {
+  degree: string;
+  institution: string;
+  specialisation: string;
+  period: string;
+  logo: Asset;
+}
+
+export type Education = {
+  identifier: string;
+  educationSection?: EducationHeader;
+  descriptionSection?: {
+    overflow?: boolean | false;
+    description: readonly [string?, string?];
+  }
 };

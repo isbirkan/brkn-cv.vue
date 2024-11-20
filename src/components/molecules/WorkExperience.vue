@@ -1,7 +1,7 @@
 <template>
   <div class="pl-2 mt-4">
     <div class="flex flex-row items-center">
-      <span class="main-icon-wrapper">
+      <span class="work-icon-wrapper">
         <i class="fas fa-laptop-code fa-lg text-white relative top-px" />
       </span>
       <h4 class="ml-1.5 font-bebas font-medium text-cst-24 leading-5 text-gray-custom-medium">

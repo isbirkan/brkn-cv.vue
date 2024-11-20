@@ -46,8 +46,12 @@
     box-shadow: inset 0px 0px 0px 6px white;
   }
 
-  .main-icon-wrapper {
+  .work-icon-wrapper {
     @apply w-cst-45 h-cst-45 p-2 border-solid border-2 border-white rounded-full bg-blue-custom leading-6
+  }
+
+  .education-icon-wrapper {
+    @apply w-cst-45 h-cst-45 pt-2 pl-2 border-solid border-2 border-white rounded-full bg-blue-custom leading-6
   }
 
   .timeline-decoration {

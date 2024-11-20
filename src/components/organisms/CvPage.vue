@@ -11,7 +11,7 @@
         :is-signature-visible="pageConfiguration?.isSidebarVisible"
         :is-work-place-visible="pageConfiguration?.isWorkPlaceVisible"
         :is-education-visible="pageConfiguration?.isEducationVisible"
-        :work-places="pageConfiguration?.workPlaces"
+        :work-place-items="pageConfiguration?.workPlaceItems"
         :education-items="pageConfiguration?.educationItems"
       />
     </div>

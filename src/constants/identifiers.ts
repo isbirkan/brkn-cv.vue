@@ -1,7 +1,8 @@
 export enum PageIdentifier {
   pageOne = 'page-one',
   pageTwo = 'page-two',
-  pageThree = 'page-three'
+  pageThree = 'page-three',
+  pageFour = 'page-four'
 }
 
 export enum SidebarIdentifier {
@@ -16,7 +17,8 @@ export enum SidebarIdentifier {
 export enum RecommendationIdentifier { 
   recommendationAntoine = 'recommendation-antoine',
   recommendationSylvain = 'recommendation-sylvain',
-  recommendationMarius = 'recommendation-marius'
+  recommendationMarius = 'recommendation-marius',
+  recommendationAndreea = 'recommendation-andreea',
 }
 
 export enum WorkplaceIdentifier {

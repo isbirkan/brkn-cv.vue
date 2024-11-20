@@ -98,6 +98,14 @@ export const useSidebar = defineStore('sidebar', () => {
         content: `It has been a pleasure working with Birkan and also a breeze. He is very reliable and he was always there to support even in most stressful of times.
                   He does not only posses the technical knowledge to make products work, he also was able to provide feedback on functional gaps in requirements and he was able to assess and discuss them with examples, making sure everyone 'speaks the same language'.
                   One more thing I would add, is that Birkan's playfulness can inspire most of the teammates to get out of their shell, be innovative and do more. His demostration and presentation skills have been out of this world, putting a smile on everyones faces and keeping them engaged, both colleagues and clients alike.`
+      },
+      {
+        identifier: RecommendationIdentifier.recommendationAndreea,
+        name: 'Andreea Țenea',
+        position: 'Full Stack Engineer',
+        content: `It was a pleasure to work with Birkan over the past few months, during which he primarily focused on support work. 
+                  As a developer, he has a solid understanding of the technology and was effective in handling support tickets. His ability to identify and address the root causes of issues helped keep things running smoothly for our team. 
+                  Birkan demonstrated a reliable approach to problem-solving, and his support contributions have been valuable in our team.`
       }]
     }
   });

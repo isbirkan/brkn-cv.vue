@@ -10,15 +10,15 @@ export const useWorkExperience = defineStore('workExperience', () => {
       identifier: WorkplaceIdentifier.brknDigital,
       workPlaceSection: {
         name: 'BRKN Digital',
+        position: 'Owner / Software Developer',
+        period: 'July 2021 - present',
+        location: 'Bucharest, RO',
+        hireType: 'Global',
         logo: {
           src: 'logo-grey-no-circle.png',
           width: '40',
           marginLeft: '-9'
-        },
-        position: 'Owner / Software Developer',
-        period: 'July 2021 - present',
-        location: 'Bucharest, RO',
-        hireType: 'Global'
+        }
       },
       descriptionSection: {
         description: [
@@ -34,16 +34,16 @@ export const useWorkExperience = defineStore('workExperience', () => {
       identifier: WorkplaceIdentifier.arniaSoftwareSecond,
       workPlaceSection: {
         name: 'Arnia Software',
+        position: 'Software Developer',
+        period: 'February 2024 - present',
+        location: 'Bucharest, RO',
+        hireType: 'Contract',
         logo: {
           src: 'arnia-software.jpg',
           width: '30',
           marginLeft: '-4',
           marginRight: '4'
-        },
-        position: 'Software Developer',
-        period: 'February 2024 - present',
-        location: 'Bucharest, RO',
-        hireType: 'Contract'
+        }
       },
       tagSection: {
         tags: [
@@ -62,16 +62,16 @@ export const useWorkExperience = defineStore('workExperience', () => {
       identifier: WorkplaceIdentifier.sodexoFrance,
       workPlaceSection: {
         name: 'Sodexo France',
+        position: 'Software Developer',
+        period: 'March 2022 - February 2024',
+        location: 'Bucharest, RO',
+        hireType: 'Contract',
         logo: {
           src: 'sodexo-france.jpg',
           width: '50',
           marginLeft: '-10',
           marginRight: '4'
         },
-        position: 'Software Developer',
-        period: 'March 2022 - February 2024',
-        location: 'Bucharest, RO',
-        hireType: 'Contract',
         intermediary: {
           name: 'Extia France',
           logo: {
@@ -177,16 +177,16 @@ export const useWorkExperience = defineStore('workExperience', () => {
       identifier: WorkplaceIdentifier.arniaSoftwarePrime,
       workPlaceSection: {
         name: 'Arnia Software',
+        position: 'Software Developer',
+        period: 'February 2018 - March 2022',
+        location: 'Bucharest, RO',
+        hireType: 'Full-time',
         logo: {
           src: 'arnia-software.jpg',
           width: '30',
           marginLeft: '-4',
           marginRight: '4'
-        },
-        position: 'Software Developer',
-        period: 'February 2018 - March 2022',
-        location: 'Bucharest, RO',
-        hireType: 'Full-time'
+        }
       },
       descriptionSection: {
         description: [
@@ -287,16 +287,16 @@ export const useWorkExperience = defineStore('workExperience', () => {
       identifier: WorkplaceIdentifier.editec,
       workPlaceSection: {
         name: 'EDITEC',
+        position: 'Software Developer',
+        period: 'September 2017 - February 2018',
+        location: 'Bucharest, RO',
+        hireType: 'Full-time',
         logo: {
           src: 'editec.jpg',
           width: '30',
           marginLeft: '-2',
           marginRight: '4'
-        },
-        position: 'Software Developer',
-        period: 'September 2017 - February 2018',
-        location: 'Bucharest, RO',
-        hireType: 'Full-time'
+        }
       },
       descriptionSection: {
         description: [
@@ -350,16 +350,16 @@ export const useWorkExperience = defineStore('workExperience', () => {
       identifier: WorkplaceIdentifier.eminusSoftware,
       workPlaceSection: {
         name: 'Eminus Software',
+        position: 'Software Developer',
+        period: 'April 2015 - September 2017',
+        location: 'Bucharest, RO',
+        hireType: 'Full-time',
         logo: {
           src: 'eminus-software.jpg',
           width: '33',
           marginLeft: '-5',
           marginRight: '2'
-        },
-        position: 'Software Developer',
-        period: 'April 2015 - September 2017',
-        location: 'Bucharest, RO',
-        hireType: 'Full-time'
+        }
       },
       descriptionSection: {
         description: [
@@ -436,16 +436,16 @@ export const useWorkExperience = defineStore('workExperience', () => {
       identifier: WorkplaceIdentifier.romanianBusinessConsult,
       workPlaceSection: {
         name: 'Romanian Business Consult',
-        logo: {
-          src: 'rbc.png',
-          width: '40',
-          marginLeft: '-8',
-          marginRight: '-2'
-        },
         position: 'C# Programmer',
         period: 'April 2013 - September 2013',
         location: 'Bucharest, RO',
-        hireType: 'Part-time'
+        hireType: 'Part-time',
+        logo: {
+          src: 'rbc.png',
+          width: '45',
+          marginLeft: '-8',
+          marginRight: '-2'
+        }
       },
       descriptionSection: {
         description: [

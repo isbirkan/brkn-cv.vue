@@ -22,7 +22,7 @@ export const usePage = defineStore('page', () => {
         SidebarIdentifier.languages,
         SidebarIdentifier.socialLinks
       ],
-      workPlaces: [
+      workPlaceItems: [
         WorkplaceIdentifier.brknDigital,
         WorkplaceIdentifier.arniaSoftwareSecond,
         WorkplaceIdentifier.sodexoFrance
@@ -37,17 +37,29 @@ export const usePage = defineStore('page', () => {
         RecommendationIdentifier.recommendationAntoine,
         RecommendationIdentifier.recommendationSylvain
       ],
-      workPlaces: [WorkplaceIdentifier.arniaSoftwarePrime, WorkplaceIdentifier.editec]
+      workPlaceItems: [WorkplaceIdentifier.arniaSoftwarePrime, WorkplaceIdentifier.editec]
     },
     [PageIdentifier.pageThree]: {
       isSidebarVisible: true,
       isWorkPlaceVisible: true,
-      isEducationVisible: true,
+      isEducationVisible: false,
       sidebarElements: [SidebarIdentifier.recommendation],
       sidebarRecommendationItems: [
-        RecommendationIdentifier.recommendationMarius
+        RecommendationIdentifier.recommendationMarius,
+        RecommendationIdentifier.recommendationAndreea
       ],
-      workPlaces: [WorkplaceIdentifier.eminusSoftware, WorkplaceIdentifier.romanianBusinessConsult],
+      workPlaceItems: [WorkplaceIdentifier.eminusSoftware, WorkplaceIdentifier.romanianBusinessConsult],
+      educationItems: [
+        EducationIdentifier.upbMaster,
+        EducationIdentifier.upbEngineer,
+        EducationIdentifier.ichc
+      ]
+    },
+    [PageIdentifier.pageFour]: {
+      isSidebarVisible: false,
+      isWorkPlaceVisible: false,
+      isEducationVisible: true,
+      sidebarElements: [],
       educationItems: [
         EducationIdentifier.upbMaster,
         EducationIdentifier.upbEngineer,

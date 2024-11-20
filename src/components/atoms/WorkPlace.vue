@@ -72,8 +72,7 @@ const workPlaceConfiguration = store.getWorkplaceByIdentifier(props.identifier);
 const workPlaceImageUrl = new URL(`../../assets/${workPlaceConfiguration?.workPlaceSection?.logo.src}`, import.meta.url).href;
 const workPlaceDetails = workPlaceConfiguration?.workPlaceSection;
 const workPlaceIntermediaryImageUrl = computed(() => {
-  return workPlaceDetails?.intermediary?.logo ? new URL(`../../assets/${workPlaceDetails?.intermediary?.logo.src}`, import.meta.url).href
-                         : '';
+  return workPlaceDetails?.intermediary?.logo ? new URL(`../../assets/${workPlaceDetails?.intermediary?.logo.src}`, import.meta.url).href : '';
 });
 const workPlaceDescription = computed(() => {
   const descriptionSection = workPlaceConfiguration?.descriptionSection;
