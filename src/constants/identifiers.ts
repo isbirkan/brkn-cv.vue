@@ -24,9 +24,11 @@ export enum RecommendationIdentifier {
 export enum WorkplaceIdentifier {
   arniaSoftwareSecond = 'arnia-software-second',
   brknDigital = 'brkn-digital',
-  sodexoFrance = 'sodexo-france',
+  sodexoFrancePart1 = 'sodexo-france-1',
+  sodexoFrancePart2 = 'sodexo-france-2',
   arniaSoftwarePrime = 'arnia-software-prime',
-  editec = 'editec',
+  editecPart1 = 'editec-1',
+  editecPart2 = 'editec-2',
   eminusSoftware = 'eminus-software',
   romanianBusinessConsult = 'romanian-business-consult'
 }

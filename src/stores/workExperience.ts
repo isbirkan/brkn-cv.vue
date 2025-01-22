@@ -20,6 +20,7 @@ export const useWorkExperience = defineStore('workExperience', () => {
           marginLeft: '-9'
         }
       },
+      isWorkPlaceSectionVisible: true,
       descriptionSection: {
         description: [
           `&emsp; Continuously working on improving my professional
@@ -45,6 +46,57 @@ export const useWorkExperience = defineStore('workExperience', () => {
           marginRight: '4'
         }
       },
+      isWorkPlaceSectionVisible: true,
+      descriptionSection: {
+        description: [
+          `
+          <p>
+            &emsp; I began my journey as part of an established and experienced team responsible for managing diverse integrations and services within a large-scale infrastructure. 
+            Our team oversaw the primary entry point and front-facing application, playing a pivotal role in the broader ecosystem. 
+            Over time, our responsibilities expanded to include the core authentication system and its associated services.
+          </p>
+          <p class="mt-2 mb-1">✒️ Responsibilities:</p>
+          <ul class="pl-5 list-disc list-inside">
+            <li>
+              Develop and maintain a .NET Core backend service application involved in integration processes
+            </li>
+            <li>
+              Extend, maintain, and resolve issues in the Vue.js frontend application
+            </li>
+            <li>
+              Learn and enhance the Auth0 authentication infrastructure, including configuration and deployment ecosystems
+            </li>
+            <li>
+              Take on the responsibility of "Admin of the Week," which involves:
+              <ul class="pl-5 list-disc list-inside">
+                <li>Monitoring and addressing issues</li>
+                <li>Reporting and resolving incidents</li>
+                <li>Providing summaries and overviews of various systems</li>
+                <li>Guiding important meetings</li>
+                <li>Offering support to the team</li>
+              </ul>
+            </li>
+            <li>
+              Offer on-demand support for external teams and clients
+            </li>
+            <li>
+              Conduct infrastructure analysis, implement improvements, and create detailed documentation
+            </li>
+          </ul>
+          <p class="mt-2 mb-1">✔️ Achievements:</p>
+          <ul class="pl-5 list-disc list-inside">
+            <li>
+              Gained hands-on experience with Auth0, including its system, configuration, and deployment processes.
+            </li>
+            <li>
+              Expanded my knowledge of Vue.js 3 and the Composition API.
+            </li>
+            <li>
+              Enhanced my skills in investigating and resolving real-world issues, focusing on the complete user journey in real-case scenarios.
+            </li>
+          </ul>`
+        ]
+      },
       tagSection: {
         tags: [
           { text: 'C#', isHiglighted: true },
@@ -53,13 +105,16 @@ export const useWorkExperience = defineStore('workExperience', () => {
           { text: 'Vue.js 3', isHiglighted: true },
           { text: 'Typescript' },
           { text: 'Pinia' },
+          { text: 'Auth0', isHiglighted: true },
           { text: 'Git' },
-          { text: 'Azure', isHiglighted: true }
+          { text: 'Azure', isHiglighted: true },
+          { text: 'CI/CD' },
+          { text: 'SendGrid' }
         ]
       }
     },
     {
-      identifier: WorkplaceIdentifier.sodexoFrance,
+      identifier: WorkplaceIdentifier.sodexoFrancePart1,
       workPlaceSection: {
         name: 'Sodexo France',
         position: 'Software Developer',
@@ -82,6 +137,7 @@ export const useWorkExperience = defineStore('workExperience', () => {
           }
         }
       },
+      isWorkPlaceSectionVisible: true,
       descriptionSection: {
         description: [
           `
@@ -121,7 +177,17 @@ export const useWorkExperience = defineStore('workExperience', () => {
               translations and new styling libraries
             </li>
           </ul>
-          <p class="mt-2 mb-1">✔️ Achievements:</p>
+          `
+        ]
+      }
+    },
+    {
+      identifier: WorkplaceIdentifier.sodexoFrancePart2,
+      isWorkPlaceSectionVisible: false,
+      descriptionSection: {
+        description: [
+          `
+          <p class="-mt-2 mb-1">✔️ Achievements:</p>
           <ul class="pl-5 list-disc list-inside">
             <li>
               Improved my knowledge about enterprise level Azure
@@ -188,6 +254,7 @@ export const useWorkExperience = defineStore('workExperience', () => {
           marginRight: '4'
         }
       },
+      isWorkPlaceSectionVisible: true,
       descriptionSection: {
         description: [
           `
@@ -284,7 +351,7 @@ export const useWorkExperience = defineStore('workExperience', () => {
       }
     },
     {
-      identifier: WorkplaceIdentifier.editec,
+      identifier: WorkplaceIdentifier.editecPart1,
       workPlaceSection: {
         name: 'EDITEC',
         position: 'Software Developer',
@@ -298,6 +365,7 @@ export const useWorkExperience = defineStore('workExperience', () => {
           marginRight: '4'
         }
       },
+      isWorkPlaceSectionVisible: true,
       descriptionSection: {
         description: [
           `
@@ -309,7 +377,17 @@ export const useWorkExperience = defineStore('workExperience', () => {
             and portable device integrations, promotions and many
             others.
           </p>
-          <p class="mt-2 mb-1">✒️ Responsibilities:</p>
+          `
+        ]
+      }
+    },
+    {
+      identifier: WorkplaceIdentifier.editecPart2,
+      isWorkPlaceSectionVisible: false,
+      descriptionSection: {
+        description: [
+          `
+          <p class="-mt-2 mb-1">✒️ Responsibilities:</p>
           <ul class="pl-5 list-disc list-inside">
             <li>
               Develop and maintain components for a gateway
@@ -361,6 +439,7 @@ export const useWorkExperience = defineStore('workExperience', () => {
           marginRight: '2'
         }
       },
+      isWorkPlaceSectionVisible: true,
       descriptionSection: {
         description: [
           `
@@ -447,6 +526,7 @@ export const useWorkExperience = defineStore('workExperience', () => {
           marginRight: '-2'
         }
       },
+      isWorkPlaceSectionVisible: true,
       descriptionSection: {
         description: [
           `

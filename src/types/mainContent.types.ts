@@ -2,7 +2,7 @@ import { type Asset } from './asset.types';
 
 export type Tag = {
   text: string;
-  isHiglighted?: boolean | false;
+  isHiglighted?: boolean;
 };
 
 export type Intermediary = {
@@ -23,13 +23,14 @@ export type WorkPlaceHeader = {
 export type WorkPlace = {
   identifier: string;
   workPlaceSection?: WorkPlaceHeader;
+  isWorkPlaceSectionVisible?: boolean;
   descriptionSection?: {
-    overflow?: boolean | false;
+    overflow?: boolean;
     description: readonly [string?, string?];
   },
   tagSection?: { 
     tags: Tag[],
-    overflow?: boolean | false;
+    overflow?: boolean;
   };
 };
 
@@ -45,7 +46,7 @@ export type Education = {
   identifier: string;
   educationSection?: EducationHeader;
   descriptionSection?: {
-    overflow?: boolean | false;
+    overflow?: boolean;
     description: readonly [string?, string?];
   }
 };

@@ -23,9 +23,9 @@ export const usePage = defineStore('page', () => {
         SidebarIdentifier.socialLinks
       ],
       workPlaceItems: [
-        WorkplaceIdentifier.brknDigital,
+        //WorkplaceIdentifier.brknDigital,
         WorkplaceIdentifier.arniaSoftwareSecond,
-        WorkplaceIdentifier.sodexoFrance
+        WorkplaceIdentifier.sodexoFrancePart1
       ]
     },
     [PageIdentifier.pageTwo]: {
@@ -37,7 +37,10 @@ export const usePage = defineStore('page', () => {
         RecommendationIdentifier.recommendationAntoine,
         RecommendationIdentifier.recommendationSylvain
       ],
-      workPlaceItems: [WorkplaceIdentifier.arniaSoftwarePrime, WorkplaceIdentifier.editec]
+      workPlaceItems: [
+        WorkplaceIdentifier.sodexoFrancePart2, 
+        WorkplaceIdentifier.arniaSoftwarePrime, 
+        WorkplaceIdentifier.editecPart1]
     },
     [PageIdentifier.pageThree]: {
       isSidebarVisible: true,
@@ -48,7 +51,10 @@ export const usePage = defineStore('page', () => {
         RecommendationIdentifier.recommendationMarius,
         RecommendationIdentifier.recommendationAndreea
       ],
-      workPlaceItems: [WorkplaceIdentifier.eminusSoftware, WorkplaceIdentifier.romanianBusinessConsult],
+      workPlaceItems: [
+        WorkplaceIdentifier.editecPart2,
+        WorkplaceIdentifier.eminusSoftware, 
+        WorkplaceIdentifier.romanianBusinessConsult],
       educationItems: [
         EducationIdentifier.upbMaster,
         EducationIdentifier.upbEngineer,
